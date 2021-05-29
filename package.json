@@ -1,0 +1,35 @@
+{
+  "name": "react-lock",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "scripts": {
+    "start:front": "cd frontend && yarn start",
+    "start": "ts-node-dev server.ts",
+    "build": "tsc",
+    "build:front": "cd frontend && yarn build && cp frontend/build build -rf",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ouzii/react-lock.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ouzii/react-lock/issues"
+  },
+  "homepage": "https://github.com/Ouzii/react-lock#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.10",
+    "@types/express": "^4.17.12",
+    "dotenv": "^10.0.0",
+    "ts-node-dev": "^1.1.6",
+    "typescript": "^4.3.2"
+  }
+}
